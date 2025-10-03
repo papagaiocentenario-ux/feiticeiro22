@@ -9,8 +9,8 @@ class JogoMagia:
         self.modo_pvp = False  # padrão é jogar contra a máquina
         self.turno_jogador = 1
 
-        self.vida_jogador1 = 100
-        self.vida_jogador2 = 100
+        self.vida_jogador1 = 200
+        self.vida_jogador2 = 200
         self.pocoes_jogador1 = 3
         self.pocoes_jogador2 = 3
 
@@ -58,9 +58,9 @@ class JogoMagia:
         self.feiticos = [
             ("Bola de Fogo (30 dano, Acerto 60%)", lambda: self.jogada(30, 60)),
             ("Raio Congelante (20 dano, Acerto 80%)", lambda: self.jogada(20, 80)),
-            ("Chuva de Meteoros (50 dano, 30%)", lambda: self.jogada(50, 30)),
+            ("Chuva de Meteoros (100 dano, 30%)", lambda: self.jogada(100, 30)),
             ("Usar Poção (+20 vida)", self.usar_pocao),
-            ("Trovão de Zeus (1000 dano, Acerto 10%)", lambda: self.jogada(1000, 10))
+            ("Trovão de Zeus (1000 dano, Acerto 50%)", lambda: self.jogada(1000, 50))
         ]
 
         self.botoes_jogador = [[], []]  # [jogador1_buttons, jogador2_buttons]
